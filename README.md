@@ -24,7 +24,7 @@ mkdocs build
 ## 저장소 구조
 
 ```
-os-make/
+practice-mkdocs/
 ├── docs/          # 문서 소스 파일
 ├── mkdocs.yml     # MkDocs 설정 파일
 └── README.md      # 이 파일
