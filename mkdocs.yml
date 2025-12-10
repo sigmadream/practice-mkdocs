@@ -1,0 +1,27 @@
+site_name: MkDocs 관련 가이드
+site_description: MkDocs를 활용한 정적 페이지 배포 관련 가이드
+site_author: MkDocs Project
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - python
+    - toml
+    - bash
+  features:
+    - content.footnote.tooltips    
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - tables
+  - footnotes
+
+nav:
+  - 홈: index.md

@@ -1,0 +1,25 @@
+name: mkdocs
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  # Repository permissions
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - uses: actions/setup-python@v6      
+      - run: uv sync
+      - run: uv run mkdocs gh-deploy --force
