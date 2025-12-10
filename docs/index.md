@@ -74,7 +74,7 @@ uv run mkdocs --version
 MkDocs 프로젝트의 기본 구조는 다음과 같습니다.
 
 ```text
-os-make/
+practice-mkdocs/
 ├── docs/              # 문서 소스 파일 (Markdown)
 │   └── index.md
 ├── mkdocs.yml         # MkDocs 설정 파일
